@@ -86,7 +86,7 @@ class Legend extends Component {
   };
 
   componentDidMount() {
-    this.updateBBox();
+    window.requestAnimationFrame(() => this.updateBBox());
   }
 
   componentDidUpdate() {
